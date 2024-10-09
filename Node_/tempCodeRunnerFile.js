@@ -1,0 +1,1 @@
+res.status(201).json({ message: req.body.name + " your data has been added succesfully", result });

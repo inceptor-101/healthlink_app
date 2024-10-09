@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+</head>
+<%- include('partials/nav') %>
+
+<body>
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-Black">Contact Us</h2>
+        <hr style="width:200px" class="w3-opacity">
+    
+        <div class="w3-section">
+            <p><i class="marker"></i> Punjab Engineering College, Chandigarh</p>
+          <p><i class="fa fa-phone" style="font-size:36px"></i>  Phone: +91 6876298727</p>
+          <p><i class="fa fa-envelope" style="font-size:36px"></i> Email: mail@mail.com</p>
+        </div><br>
+        <p>User Feedback</p>
+    
+        <form action="/contact" method="POST">
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required="" name="Name"></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Phone number" required="" name="Phone number"></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required="" name="Subject"></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required="" name="Message"></p>
+          <p>
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      <!-- End Contact Section -->
+      </div>
+</body>
+</html>
